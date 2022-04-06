@@ -1,0 +1,40 @@
+Create calculator layout:
+    button section arranged in caculator keyboard fashion
+    create operations section - add subtract multiply divide equal clear
+    create display section
+        needs to add each digit as selected
+        clear when new digits are entered after operation button
+        refresh with result when equal or new operation button is pressed
+
+1 populate the screen
+2 get value from screen
+3 clear the screen
+4 get operation
+5 perform operation
+
+narrative:
+User will enter digits or decimal point and as digits are entered they will
+be added to the screen in the far right postion pushing the characters toward
+the left.
+
+If a decimal point is clicked it first checks if the string already
+contains a decimal point and adds the point if no other point exists.
+
+When an operation button is clicked the operation type is recorded 
+and the screen contents are read and added as the first value in an array.
+
+When the user begins to enter another number the screen is cleared first then
+the second number is added to the display the same as the first.
+
+When the user clicks the equal sign or another operation the second number is
+added to the array and the operation is performed. After the operation is performed
+the screen is cleared and the result is written to the screen.
+
+After the operation is performed the result becomes the first item in the array
+and the other items in the array are cleared
+
+calulation array = [n1, operation, n2]
+
+
+
+hitting the clear button resets the array to empty
