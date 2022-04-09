@@ -1,0 +1,21 @@
+if the Clear button is clicked - clear calcArray
+
+if calcArray length = 0:
+    click digit or dot - set calcArray[0] = button id
+    click operation or equal do nothing
+
+if calcArray length = 1:
+    if digit  - add digit on to end of calcArray[0] +=
+    if dot - check calcArray[0] for a dot and add at end if no dot else do nothing
+    if operation - add operation id to calcArray[1]
+    if equal - do nothing
+
+if calcArray length = 2:
+    click digit or dot - set calcArray[0] = button id
+    click operation or equal do nothing
+
+if calcArray length = 3:
+    if digit  - add digit on to end of calcArray[2] +=
+    if dot - check calcArray[2] for a dot and add at end if no dot else do nothing
+    if operation - complete operation, clear array, put result in calcArray[0] and operation in calcArray[1]
+    if equal - complete operation, clear array, put result in calcArray[0]
